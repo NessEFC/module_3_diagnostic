@@ -15,7 +15,8 @@ RSpec.feature "As a vistior" do
         expect(page).to have_content("UDR")
         expect(page).to have_content("800 Acoma St")
         expect(page).to have_content("ELEC")
-        expect(page).to have_content("")
+        expect(page).to have_content(0.31422)
+        expect(page).to have_content("24 hours daily")
 
 
       # As a user
