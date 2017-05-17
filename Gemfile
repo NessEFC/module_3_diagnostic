@@ -9,12 +9,31 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'puma', '~> 3.0'
+
+
+gem 'faraday'
+gem 'figaro'
+gem 'autoprefixer-rails'
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'pry'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'awesome_print', require:'ap'
+  gem 'faker'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
+  gem 'listen', '~> 3.0.5'
 end
 
+group :test do
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'launchy'
+  gem 'vcr'
+  gem 'webmock'
+end
