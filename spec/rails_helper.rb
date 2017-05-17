@@ -13,9 +13,7 @@ require 'support/factory_girl'
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
-  # config.filter_sensitive_data('<GITHUB_CLIENT_ID>') { ENV['GITHUB_CLIENT_ID'] }
-  # config.filter_sensitive_data('<GITHUB_CLIENT_SECRET>') { ENV['GITHUB_CLIENT_SECRET'] }
-  # config.filter_sensitive_data('<GITHUB_TOKEN>') { ENV['GITHUB_TOKEN'] }
+  config.filter_sensitive_data('<NREL_KEY>') { ENV['NREL_KEY'] }
 end
 
 DatabaseCleaner.strategy = :truncation
