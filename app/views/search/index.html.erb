@@ -1,3 +1,9 @@
 <h1>Raw Search Results</h1>
 
+<%= @station_data = raw_stations.map do |station|
+  station[:station_name]
+end %>
+
+
+
 <%= @station_data %>
